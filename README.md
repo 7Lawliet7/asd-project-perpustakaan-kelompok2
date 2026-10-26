@@ -23,7 +23,7 @@ Pada Tahap 1 (Checkpoint UTS), data disimpan di memori RAM menggunakan struktur 
 
 ## 3. Cara Menjalankan Program
 
-Pastikan Python 3.8+ sudah terinstal di sistem Anda.
+Pastikan Python 3.15+ sudah terinstal di sistem Anda.
 
 1. Clone repository ini:
    ```bash
