@@ -7,6 +7,7 @@ from datetime import date
 # Array of Struct: Penyimpanan utama data buku (List of Dictionary)
 koleksi_buku = []
 
+    # Linear Search O(n): telusuri list dari indeks 0, bandingkan kode dengan case-insensitive exact match.
 def cari_index_kode(kode_buku):
     """
     [Algoritma] Linear Search O(n) untuk mencari index buku.
@@ -18,6 +19,7 @@ def cari_index_kode(kode_buku):
             return index
     return -1
 
+    # Rendering tabel dinamis: lebar tiap kolom dihitung dari string terpanjang agar output rapi.
 def tampilkan_tabel(daftar_buku, tampilkan_ringkasan=False):
     """
     [UI] Menampilkan daftar buku dalam format tabel teks dinamis.
@@ -206,6 +208,7 @@ def filter_buku_genre():
         print("Error: genre tidak boleh kosong.")
         return
 
+    # Filtering O(n): partial match case-insensitive menggunakan casefold().
     hasil = [
         buku for buku in koleksi_buku
         if genre.casefold() in buku["genre"].casefold()
